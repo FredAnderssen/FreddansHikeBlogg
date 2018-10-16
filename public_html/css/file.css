@@ -1,0 +1,131 @@
+/*
+* Globals
+*/
+h5 {
+  color: yellow; }
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+/* Links */
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #444;
+  text-shadow: none;
+  background-color: #fff;
+  border: 1px solid #fff; }
+
+/*
+* Base structure
+*/
+html, body {
+  height: 100%;
+  background-color: #333; }
+
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/*
+* Contact page
+*/
+/*
+* Frontpage
+*/
+.hero-section {
+  background-color: #121212; }
+
+.blogpost-section li {
+  list-style-type: none; }
+  .blogpost-section li h2 {
+    color: #fafafa; }
+
+/*
+* Gallery page
+*/
+.gallery-section {
+  height: 1500px; }
+
+/*
+* Header
+*/
+.header-section {
+  background-color: white; }
+
+.field-section {
+  height: 40px;
+  width: 200px; }
+  .field-section input {
+    width: 100%; }
+
+/*
+* Cover
+*/
+.main-content {
+  height: 800px; }
+
+/*
+* Footer
+*/
+.footer-section-one {
+  background-color: #39454b;
+  height: 300px;
+  width: 100%; }
+  .footer-section-one img {
+    height: 128px;
+    width: 128px; }
+
+.footer-section-two {
+  background-color: #344047;
+  height: 40px;
+  width: 100%; }
+  .footer-section-two p {
+    padding-top: 10px; }
+
+.item-footer-left {
+  grid-area: left; }
+
+.item-footer-middle {
+  grid-area: middle; }
+
+.item-footer-right {
+  grid-area: right; }
+
+.grid-container-footer {
+  display: grid;
+  height: 100%;
+  grid-gap: 20px;
+  padding: 20px;
+  grid-template-areas: 'left middle right' 'left middle right' 'left middle right'; }
+  .grid-container-footer div {
+    text-align: left;
+    padding-left: 20px; }
+  .grid-container-footer .item-footer-inner {
+    padding-left: 0px;
+    margin-right: 20px; }
+    .grid-container-footer .item-footer-inner p {
+      padding-top: 15px; }
+    .grid-container-footer .item-footer-inner span {
+      padding-top: 2em; }
+
+/*
+* Affix and center
+*/

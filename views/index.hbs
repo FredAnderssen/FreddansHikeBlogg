@@ -1,0 +1,47 @@
+<div class="hero">
+  <section class="hero is-success is-fullheight ">
+    <div class="hero-body hero-section">
+      <div class="container">
+        <h1 class="title">
+          Freddans Blogg
+        </h1>
+        <h2 class="subtitle" >
+          Follow Freddans terrific and exciting adventures
+        </h2>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="blogpost-section">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+        {{>blogposts}}
+      </div>
+    </div>
+  </article>
+
+  {{#if isLoggedIn}}
+  <form action="/blogpost/createpost" method="POST">
+    <input type="hidden" value="{{token}}" name="token">
+    <article class="media">
+      <div class="media-content">
+        <div class="field">
+          <p class="control">
+            <input class="input is-small" name="titlepost" type="text" placeholder="Write title...">
+            <input class="input is-small" name="blogpost" type="text" placeholder="Write blogpost...">
+          </p>
+        </div>
+        <nav class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <input type="submit" value="Submit post">
+            </div>
+          </div>
+        </nav>
+      </div>
+    </article>
+  </form>
+  {{/if}}
+</div>

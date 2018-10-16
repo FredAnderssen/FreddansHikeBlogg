@@ -1,0 +1,21 @@
+<form method="POST" action="/login">
+  <input type="hidden" value="{{token}}" name="token">
+  <a class="navbar-link navbar-item" href="/">
+    Admin
+  </a>
+  <div class="navbar-dropdown">
+    <a class="navbar-item">
+      <div class="field field-section">
+        <input class="input" type="email" placeholder="Email.." name="username">
+      </div>
+      <div class="field field-section">
+        <input class="input" type="password" placeholder="Password" name="password">
+      </div>
+      <div class="field field-section">
+        <button class="button is-light">
+          Login
+        </button>
+      </div>
+    </a>
+  </div>
+</form>
